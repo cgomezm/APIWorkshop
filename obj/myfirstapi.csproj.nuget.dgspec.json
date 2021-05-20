@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\dotnet\\myfirstapi\\myfirstapi.csproj": {}
+    "C:\\Users\\dcardenas\\Documents\\APIWorkshop\\myfirstapi.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\dotnet\\myfirstapi\\myfirstapi.csproj": {
+    "C:\\Users\\dcardenas\\Documents\\APIWorkshop\\myfirstapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\dotnet\\myfirstapi\\myfirstapi.csproj",
+        "projectUniqueName": "C:\\Users\\dcardenas\\Documents\\APIWorkshop\\myfirstapi.csproj",
         "projectName": "myfirstapi",
-        "projectPath": "C:\\Dev\\dotnet\\myfirstapi\\myfirstapi.csproj",
-        "packagesPath": "C:\\Users\\ryepes\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\dotnet\\myfirstapi\\obj\\",
+        "projectPath": "C:\\Users\\dcardenas\\Documents\\APIWorkshop\\myfirstapi.csproj",
+        "packagesPath": "C:\\Users\\dcardenas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dcardenas\\Documents\\APIWorkshop\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ryepes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dcardenas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +40,20 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -66,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

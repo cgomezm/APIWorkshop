@@ -1,15 +1,17 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Models.Artist
+namespace Models
 {
+    //[Table("Artist")]
     public class Artist
     {
-        [Required(ErrorMessage = "Artist Id is required")]
         public int Id { get; set; }
+
         [Required(ErrorMessage = "Artist Name is required")]
         public string Name { get; set; }
         public string Description { get; set; }
-        public List<Models.Album.Album> Albums { get; set; }
+        public List<Album> Albums { get; set; }
     }
 }
