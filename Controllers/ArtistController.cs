@@ -4,11 +4,13 @@ using Models;
 using System.Linq;
 using APIWorkshop.DataAccess;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace myfirstapi.Controllers
 {
     [ApiController]
-    [Route("controller")]
+    [Route("[controller]")]
+    
     public class ArtistController : ControllerBase
     {
         private MusicDBContext _dBContext { get; set; }
@@ -42,6 +44,7 @@ namespace myfirstapi.Controllers
 
 
         [HttpPost]
+        [Authorize(Policy = "super")]
         public List<Artist> Post(Artist artist)
         {
             var artists = new List<Artist>();
