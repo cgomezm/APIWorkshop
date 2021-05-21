@@ -13,6 +13,6 @@ namespace Models
 
         //[ForeignKey("ArtistId")]
         public int ArtistId { get; set; }
-        public Artist Artist { get; set; }        
+        public Artist Artist { get; set; }
     }
 }
